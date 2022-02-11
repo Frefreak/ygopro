@@ -33,4 +33,12 @@
 /gframe/ygopro.rc
 /gframe/ygopro.aps
 /premake5
-/premake5.exe
+/irrlicht/
+/lua/
+/obj/
+/sqlite3/
+premake5.exe
+
+.cache/
+compile_commands.json
+irrKlang/
