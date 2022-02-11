@@ -1,6 +1,6 @@
 #include "sound_manager.h"
 #ifdef YGOPRO_USE_IRRKLANG
-#include "../ikpmp3/ikpMP3.h"
+#include "ikpMP3.cpp"
 #endif
 
 namespace ygo {
@@ -17,7 +17,7 @@ bool SoundManager::Init() {
 	if(!engineSound || !engineMusic) {
 		return false;
 	} else {
-		irrklang::ikpMP3Init(engineMusic);
+		irrKlangPluginInit(engineMusic, IRR_KLANG_VERSION);
 		return true;
 	}
 #endif // YGOPRO_USE_IRRKLANG
